@@ -1,6 +1,10 @@
 # 1Password2KeePassX
 Tool to convert a 1password TSV export file in to a KeePassX XML data file.
 
+# Caveats
+- This tool is lossy. It does **not** preserve all the data encoded in the 1Password export. It does however translate all the properties than KeepPassX supports.
+- All password entries get placed in an *All* group within the exported file. Any organization in 1Password is not carried over.
+
 # Usage
 ./1pass2kpx.py <input tsv file> <output filename>
 
